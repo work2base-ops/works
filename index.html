@@ -3,22 +3,25 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#000000">
   <title>Work2Base — Dashboards, Websites & IT Support</title>
-  <meta name="description" content="Freelance tech contractor: custom dashboards, business websites, and reliable IT support for small and growing teams.">
+  <meta name="description" content="Tech contractor for small and growing teams: custom dashboards, modern websites, and reliable IT support.">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container nav">
+  <header class="nav">
+    <div class="wrap nav-inner">
       <a href="#top" class="logo" aria-label="Work2Base home">
-        <span class="logo-mark">W2</span><span>Work2Base</span>
+        <img src="assets/favicon.svg" alt="" width="22" height="22"><span>Work2Base</span>
       </a>
       <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
-        <span></span><span></span><span></span>
+        <span></span><span></span>
       </button>
       <nav id="nav-links" class="nav-links">
         <a href="#services">Services</a>
@@ -26,7 +29,7 @@
         <a href="#work">Work</a>
         <a href="#pricing">Pricing</a>
         <a href="#faq">FAQ</a>
-        <a href="#contact" class="btn btn-small">Get a quote</a>
+        <a href="#contact" class="pill pill-sm">Get a quote</a>
       </nav>
     </div>
   </header>
@@ -34,172 +37,194 @@
   <main id="top">
     <!-- Hero -->
     <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <p class="eyebrow">Tech contractor for small &amp; growing teams</p>
-          <h1>Dashboards, websites &amp; IT support — <span class="accent">built right, handled for you.</span></h1>
-          <p class="lead">I help businesses turn scattered data into clear dashboards, launch fast professional websites, and keep their tech running smoothly — without hiring a full-time IT team.</p>
-          <div class="hero-cta">
-            <a href="#contact" class="btn">Book a free consult</a>
-            <a href="#services" class="btn btn-ghost">See services</a>
-          </div>
-          <ul class="hero-points">
-            <li>Fixed quotes, no surprises</li>
-            <li>Remote &amp; on-site</li>
-            <li>Reply within 24h</li>
-          </ul>
-        </div>
+      <div class="grid-bg" aria-hidden="true"></div>
+      <div class="glow glow-a" aria-hidden="true"></div>
+      <div class="glow glow-b" aria-hidden="true"></div>
 
-        <!-- Dashboard mockup (pure HTML/CSS) -->
-        <div class="mockup" aria-hidden="true">
-          <div class="mock-bar"><i></i><i></i><i></i><span>sales-dashboard</span></div>
-          <div class="mock-body">
-            <div class="kpis">
-              <div class="kpi"><small>Revenue</small><b>$48.2k</b><em class="up">+12%</em></div>
-              <div class="kpi"><small>Orders</small><b>1,284</b><em class="up">+8%</em></div>
-              <div class="kpi"><small>Tickets</small><b>17</b><em class="down">−21%</em></div>
-            </div>
-            <div class="chart">
-              <div style="--h:40%"></div><div style="--h:55%"></div><div style="--h:48%"></div>
-              <div style="--h:70%"></div><div style="--h:62%"></div><div style="--h:78%"></div>
-              <div style="--h:74%"></div><div style="--h:90%"></div>
+      <div class="wrap hero-copy">
+        <p class="kicker reveal">Dashboards · Websites · IT Support</p>
+        <h1 class="reveal">Technology,<br><span class="gradient-text">made effortless.</span></h1>
+        <p class="sub reveal">Clear dashboards, modern websites, and dependable IT support for teams that would rather focus on their business.</p>
+        <div class="cta reveal">
+          <a href="#contact" class="pill">Book a free consult</a>
+          <a href="#services" class="link-arrow">Explore services</a>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <div class="device reveal" id="device" aria-hidden="true">
+          <div class="device-bar"><i></i><i></i><i></i><span>dashboard.work2base</span></div>
+          <div class="device-body">
+            <aside class="side">
+              <b></b><b class="on"></b><b></b><b></b><b></b>
+            </aside>
+            <div class="panel">
+              <div class="kpis">
+                <div><small>Revenue</small><strong data-count="48.2" data-prefix="$" data-suffix="k" data-dec="1">$48.2k</strong><em>▲ 12.4%</em></div>
+                <div><small>Active users</small><strong data-count="3284">3,284</strong><em>▲ 8.1%</em></div>
+                <div><small>Uptime</small><strong data-count="99.98" data-suffix="%" data-dec="2">99.98%</strong><em>● Operational</em></div>
+              </div>
+              <div class="chart-card">
+                <svg viewBox="0 0 600 180" preserveAspectRatio="none" class="line-chart">
+                  <defs>
+                    <linearGradient id="fill" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0" stop-color="#5ac8fa" stop-opacity=".35"/>
+                      <stop offset="1" stop-color="#5ac8fa" stop-opacity="0"/>
+                    </linearGradient>
+                    <linearGradient id="stroke" x1="0" y1="0" x2="1" y2="0">
+                      <stop offset="0" stop-color="#0a84ff"/>
+                      <stop offset="1" stop-color="#bf5af2"/>
+                    </linearGradient>
+                  </defs>
+                  <path class="area" d="M0,150 C60,140 90,110 150,115 C210,120 240,80 300,78 C360,76 390,95 450,60 C510,25 550,35 600,20 L600,180 L0,180 Z" fill="url(#fill)"/>
+                  <path class="line" d="M0,150 C60,140 90,110 150,115 C210,120 240,80 300,78 C360,76 390,95 450,60 C510,25 550,35 600,20" fill="none" stroke="url(#stroke)" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Services -->
+    <!-- Services: bento -->
     <section id="services" class="section">
-      <div class="container">
-        <p class="eyebrow center">What I do</p>
-        <h2 class="center">Three services, one reliable contractor</h2>
-        <div class="cards">
-          <article class="card">
-            <div class="icon">
-              <svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg>
+      <div class="wrap">
+        <header class="head reveal">
+          <p class="kicker">Services</p>
+          <h2>Three services.<br><span class="dim">One contractor who handles it all.</span></h2>
+        </header>
+
+        <div class="bento">
+          <article class="tile tile-lg reveal">
+            <div class="tile-copy">
+              <p class="tile-kicker blue">Dashboards &amp; Reporting</p>
+              <h3>See your whole business at a glance.</h3>
+              <p>Live dashboards that connect your spreadsheets, databases and apps, built in Power BI, Looker Studio, Excel or as custom web apps.</p>
             </div>
-            <h3>Dashboards &amp; Reporting</h3>
-            <p>Live dashboards that pull from your spreadsheets, databases, and apps so you can see what's happening at a glance.</p>
-            <ul class="checks">
-              <li>Power BI, Looker Studio, Excel / Google Sheets</li>
-              <li>Custom web dashboards</li>
-              <li>Automated data pipelines &amp; KPI tracking</li>
-            </ul>
+            <div class="bars" aria-hidden="true">
+              <i style="--h:35%"></i><i style="--h:52%"></i><i style="--h:44%"></i><i style="--h:68%"></i>
+              <i style="--h:58%"></i><i style="--h:76%"></i><i style="--h:71%"></i><i style="--h:92%"></i>
+            </div>
           </article>
-          <article class="card featured">
-            <div class="icon">
-              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v5"/></svg>
+
+          <article class="tile reveal">
+            <p class="tile-kicker purple">Websites &amp; Web Pages</p>
+            <h3>Fast. Beautiful. Built to convert.</h3>
+            <p>Business sites and landing pages that load instantly on any device, with SEO, analytics and hosting handled.</p>
+            <div class="mini-browser" aria-hidden="true">
+              <div class="mb-bar"><i></i><i></i><i></i></div>
+              <div class="mb-hero"></div>
+              <div class="mb-row"><span></span><span></span><span></span></div>
             </div>
-            <h3>Websites &amp; Web Pages</h3>
-            <p>Fast, mobile-friendly websites and landing pages that look professional and bring you customers.</p>
-            <ul class="checks">
-              <li>Business sites &amp; landing pages</li>
-              <li>SEO basics, analytics, contact forms</li>
-              <li>Hosting, domains &amp; ongoing updates</li>
-            </ul>
           </article>
-          <article class="card">
-            <div class="icon">
-              <svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/><path d="M9 12l2 2 4-4"/></svg>
-            </div>
-            <h3>IT Support</h3>
-            <p>Friendly, dependable help for the tech your team relies on every day — remote or on-site.</p>
-            <ul class="checks">
-              <li>Computer, network &amp; Wi-Fi setup</li>
-              <li>Microsoft 365 / Google Workspace admin</li>
-              <li>Backups, security &amp; troubleshooting</li>
+
+          <article class="tile reveal">
+            <p class="tile-kicker green">IT Support</p>
+            <h3>Everything just works.</h3>
+            <p>Devices, networks, Microsoft 365 and Google Workspace, backups and security. Remote or on-site.</p>
+            <ul class="status" aria-hidden="true">
+              <li><span class="dot"></span>Network<em>Online</em></li>
+              <li><span class="dot"></span>Backups<em>Synced</em></li>
+              <li><span class="dot"></span>Security<em>Protected</em></li>
             </ul>
           </article>
         </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="section stats-section">
+      <div class="wrap stats">
+        <div class="stat reveal"><strong>24h</strong><span>Response time</span></div>
+        <div class="stat reveal"><strong>Fixed</strong><span>Quotes, no surprises</span></div>
+        <div class="stat reveal"><strong>1</strong><span>Contact for all your tech</span></div>
       </div>
     </section>
 
     <!-- Process -->
-    <section id="process" class="section alt">
-      <div class="container">
-        <p class="eyebrow center">How it works</p>
-        <h2 class="center">Simple process, clear results</h2>
+    <section id="process" class="section">
+      <div class="wrap">
+        <header class="head reveal">
+          <p class="kicker">Process</p>
+          <h2>Simple from<br><span class="dim">start to launch.</span></h2>
+        </header>
         <ol class="steps">
-          <li><span>1</span><h3>Free consult</h3><p>A 30-minute call to understand your goals, tools, and budget.</p></li>
-          <li><span>2</span><h3>Fixed quote</h3><p>You get a written scope, timeline, and price — no hourly surprises.</p></li>
-          <li><span>3</span><h3>Build &amp; review</h3><p>I build in stages and share progress so you can give feedback early.</p></li>
-          <li><span>4</span><h3>Launch &amp; support</h3><p>Handover, training, and optional ongoing support once it's live.</p></li>
+          <li class="reveal"><span>01</span><h3>Consult</h3><p>A free 30-minute call about your goals, tools and budget.</p></li>
+          <li class="reveal"><span>02</span><h3>Quote</h3><p>A written scope, timeline and fixed price.</p></li>
+          <li class="reveal"><span>03</span><h3>Build</h3><p>Built in stages, with previews you can react to early.</p></li>
+          <li class="reveal"><span>04</span><h3>Launch</h3><p>Handover, training and optional ongoing support.</p></li>
         </ol>
       </div>
     </section>
 
-    <!-- Portfolio -->
+    <!-- Work -->
     <section id="work" class="section">
-      <div class="container">
-        <p class="eyebrow center">Recent work</p>
-        <h2 class="center">Example projects</h2>
+      <div class="wrap">
+        <header class="head reveal">
+          <p class="kicker">Work</p>
+          <h2>Recent projects.</h2>
+        </header>
         <div class="work-grid">
-          <article class="work">
-            <div class="work-thumb t1"></div>
-            <div class="work-body">
-              <span class="tag">Dashboard</span>
-              <h3>Retail sales dashboard</h3>
-              <p>Combined POS and inventory data into one Power BI report, saving 6 hours of manual reporting per week.</p>
-            </div>
+          <article class="work reveal">
+            <div class="work-visual v1"></div>
+            <p class="tile-kicker blue">Dashboard</p>
+            <h3>Retail sales dashboard</h3>
+            <p>Combined POS and inventory data into one live report, saving 6 hours of manual reporting every week.</p>
           </article>
-          <article class="work">
-            <div class="work-thumb t2"></div>
-            <div class="work-body">
-              <span class="tag">Website</span>
-              <h3>Local services website</h3>
-              <p>Rebuilt a slow site into a fast, mobile-first page with online booking — enquiries doubled in 3 months.</p>
-            </div>
+          <article class="work reveal">
+            <div class="work-visual v2"></div>
+            <p class="tile-kicker purple">Website</p>
+            <h3>Local services website</h3>
+            <p>Rebuilt a slow site as a fast, mobile-first page with online booking. Enquiries doubled in 3 months.</p>
           </article>
-          <article class="work">
-            <div class="work-thumb t3"></div>
-            <div class="work-body">
-              <span class="tag">IT Support</span>
-              <h3>Office IT setup</h3>
-              <p>Set up 15 laptops, secure Wi-Fi, shared drives, and automatic backups for a growing small office.</p>
-            </div>
+          <article class="work reveal">
+            <div class="work-visual v3"></div>
+            <p class="tile-kicker green">IT Support</p>
+            <h3>Office IT setup</h3>
+            <p>Set up 15 laptops, secure Wi-Fi, shared drives and automatic backups for a growing office.</p>
           </article>
         </div>
-        <p class="note center">Replace these with your own projects and client results.</p>
       </div>
     </section>
 
     <!-- Pricing -->
-    <section id="pricing" class="section alt">
-      <div class="container">
-        <p class="eyebrow center">Pricing</p>
-        <h2 class="center">Transparent starting prices</h2>
-        <div class="cards pricing">
-          <article class="card">
-            <h3>Starter Website</h3>
-            <p class="price">from $499</p>
-            <ul class="checks">
+    <section id="pricing" class="section">
+      <div class="wrap">
+        <header class="head reveal">
+          <p class="kicker">Pricing</p>
+          <h2>Clear pricing.<br><span class="dim">Starting points, not fine print.</span></h2>
+        </header>
+        <div class="prices">
+          <article class="price reveal">
+            <h3>Website</h3>
+            <p class="amount">$499<span>+</span></p>
+            <ul>
               <li>Up to 5 pages</li>
-              <li>Mobile-friendly design</li>
-              <li>Contact form &amp; basic SEO</li>
+              <li>Mobile-first design</li>
+              <li>Contact form &amp; SEO basics</li>
             </ul>
-            <a href="#contact" class="btn btn-ghost">Get started</a>
+            <a href="#contact" class="pill pill-ghost">Get started</a>
           </article>
-          <article class="card featured">
-            <span class="badge">Popular</span>
-            <h3>Business Dashboard</h3>
-            <p class="price">from $799</p>
-            <ul class="checks">
+          <article class="price featured reveal">
+            <p class="badge">Most popular</p>
+            <h3>Dashboard</h3>
+            <p class="amount">$799<span>+</span></p>
+            <ul>
               <li>Up to 3 data sources</li>
               <li>Interactive charts &amp; KPIs</li>
               <li>Auto-refresh &amp; training</li>
             </ul>
-            <a href="#contact" class="btn">Get started</a>
+            <a href="#contact" class="pill">Get started</a>
           </article>
-          <article class="card">
-            <h3>IT Support Plan</h3>
-            <p class="price">from $199<small>/month</small></p>
-            <ul class="checks">
+          <article class="price reveal">
+            <h3>IT Support</h3>
+            <p class="amount">$199<span>/mo</span></p>
+            <ul>
               <li>Remote help desk</li>
               <li>Monitoring &amp; backups</li>
               <li>Priority on-site visits</li>
             </ul>
-            <a href="#contact" class="btn btn-ghost">Get started</a>
+            <a href="#contact" class="pill pill-ghost">Get started</a>
           </article>
         </div>
       </div>
@@ -207,43 +232,46 @@
 
     <!-- FAQ -->
     <section id="faq" class="section">
-      <div class="container narrow">
-        <p class="eyebrow center">FAQ</p>
-        <h2 class="center">Common questions</h2>
-        <details>
-          <summary>Do you work with small businesses?</summary>
-          <p>Yes — most clients are small teams, startups, and solo owners who need expert help without a full-time hire.</p>
-        </details>
-        <details>
-          <summary>How long does a website or dashboard take?</summary>
-          <p>A starter website usually takes 1–2 weeks. Dashboards take 1–3 weeks depending on how many data sources are involved.</p>
-        </details>
-        <details>
-          <summary>Can you support us after the project is done?</summary>
-          <p>Absolutely. You can book ad-hoc hours or choose a monthly support plan for updates, fixes, and IT help.</p>
-        </details>
-        <details>
-          <summary>Do you work remotely?</summary>
-          <p>Most work is done remotely. On-site visits are available for IT setup and support within the local area.</p>
-        </details>
+      <div class="wrap narrow">
+        <header class="head reveal">
+          <p class="kicker">FAQ</p>
+          <h2>Questions, answered.</h2>
+        </header>
+        <div class="faq reveal">
+          <details>
+            <summary>Do you work with small businesses?</summary>
+            <p>Yes. Most clients are small teams, startups and owner-operators who need expert help without a full-time hire.</p>
+          </details>
+          <details>
+            <summary>How long does a project take?</summary>
+            <p>A starter website usually takes 1–2 weeks. Dashboards take 1–3 weeks, depending on how many data sources are involved.</p>
+          </details>
+          <details>
+            <summary>Can you support us after launch?</summary>
+            <p>Yes. Book hours as you need them, or choose a monthly plan for updates, fixes and IT help.</p>
+          </details>
+          <details>
+            <summary>Do you work remotely?</summary>
+            <p>Most work is remote. On-site visits are available for IT setup and support in the local area.</p>
+          </details>
+        </div>
       </div>
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="section alt">
-      <div class="container contact-grid">
-        <div>
-          <p class="eyebrow">Let's talk</p>
-          <h2>Tell me about your project</h2>
-          <p class="lead">Send a short message and I'll reply within one business day with next steps and a free consult time.</p>
-          <ul class="contact-info">
-            <li><strong>Email:</strong> <a href="mailto:hello@example.com">hello@example.com</a></li>
-            <li><strong>Hours:</strong> Mon–Fri, 9am–6pm</li>
-          </ul>
-        </div>
-        <form id="contact-form" class="form" novalidate>
-          <label>Name<input name="name" type="text" required autocomplete="name"></label>
-          <label>Email<input name="email" type="email" required autocomplete="email"></label>
+    <section id="contact" class="section contact">
+      <div class="glow glow-c" aria-hidden="true"></div>
+      <div class="wrap narrow">
+        <header class="head center reveal">
+          <p class="kicker">Contact</p>
+          <h2>Let's build<br><span class="gradient-text">something great.</span></h2>
+          <p class="sub">Tell me about your project. I'll reply within one business day.</p>
+        </header>
+        <form id="contact-form" class="form glass reveal" novalidate>
+          <div class="row">
+            <label>Name<input name="name" type="text" required autocomplete="name" placeholder="Jane Doe"></label>
+            <label>Email<input name="email" type="email" required autocomplete="email" placeholder="jane@company.com"></label>
+          </div>
           <label>Service
             <select name="service">
               <option>Dashboard &amp; Reporting</option>
@@ -252,18 +280,22 @@
               <option>Not sure yet</option>
             </select>
           </label>
-          <label>Message<textarea name="message" rows="5" required></textarea></label>
-          <button type="submit" class="btn">Send message</button>
+          <label>Message<textarea name="message" rows="5" required placeholder="What are you looking to build or fix?"></textarea></label>
+          <button type="submit" class="pill">Send message</button>
           <p class="form-status" role="status" aria-live="polite"></p>
         </form>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-row">
-      <span>© <span id="year"></span> Work2Base. All rights reserved.</span>
-      <nav><a href="#services">Services</a><a href="#pricing">Pricing</a><a href="#contact">Contact</a></nav>
+  <footer class="footer">
+    <div class="wrap footer-row">
+      <span>© <span id="year"></span> Work2Base</span>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="mailto:hello@example.com">hello@example.com</a>
+      </nav>
     </div>
   </footer>
 
