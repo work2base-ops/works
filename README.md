@@ -1,4 +1,4 @@
-# Work2Base — Contractor Website
+# Eagle — Contractor Website (work2base.com)
 
 A one-page site for a freelance tech contractor offering **dashboards**, **websites / web pages**, and **IT support**.
 
@@ -22,11 +22,11 @@ python3 -m http.server 8000
 
 ## Customize
 
-1. **Business name.** Search for `Work2Base` in `index.html` and replace it.
-2. **Email.** Replace `hello@example.com` in `index.html` and `CONTACT_EMAIL` in `script.js`.
+1. **Business name.** The brand is `Eagle`. Search for it in `index.html` to change it.
+2. **Email.** The contact email is `eagle@work2base.com` (in `index.html` and `CONTACT_EMAIL` in `script.js`).
 3. **Prices.** Edit the Pricing section in `index.html`.
-4. **Portfolio.** Replace the three example projects with real ones. To show an image, put it in `assets/` and swap the `.work-thumb` div for an `<img>`.
-5. **Colors.** Change `--primary` and `--accent` at the top of `styles.css`.
+4. **Portfolio.** Replace the three example projects with real ones. To show an image, put it in `assets/` and swap the `.work-visual` div for an `<img>`.
+5. **Colors.** Change `--blue`, `--cyan` and `--purple` at the top of `styles.css`.
 
 ## Receiving form submissions
 

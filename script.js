@@ -1,5 +1,5 @@
 // Change this to the inbox where quote requests should go.
-const CONTACT_EMAIL = "hello@example.com";
+const CONTACT_EMAIL = "eagle@work2base.com";
 
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
